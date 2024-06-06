@@ -6,7 +6,7 @@ public class Credit
     private int creditNumber;
     private Status status;
     private Customer customer;
-    private CreditAccount account;
+    private CreditAccount? account;
 
     public enum Status
     {
@@ -46,7 +46,7 @@ public class Credit
         this.status = status;
     }
 
-    public CreditAccount getAccount() {
+    public CreditAccount? getAccount() {
         return account;
     }
 
