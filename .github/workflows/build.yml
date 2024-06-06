@@ -1,0 +1,24 @@
+name: DDD banking example in C# - CI
+
+on: [ push,  pull_request ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-24.04
+
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Install dependencies, build, and test 1
+      working-directory: "./1 Hands-on Legacy Code"
+      run: |
+        dotnet restore
+        dotnet build --configuration Release --no-restore
+        dotnet test --no-restore --verbosity normal
