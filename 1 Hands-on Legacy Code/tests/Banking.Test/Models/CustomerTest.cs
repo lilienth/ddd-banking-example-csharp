@@ -6,11 +6,11 @@ public class CustomerTest
     void TestCustomerConstruction()
     {
         Customer customer = new Customer("Carola", "Lilienthal", new DateOnly(1967, 9, 11), 11);
-        Assert.Equal("Carola", customer.getFirstName());
-        Assert.Equal("Lilienthal", customer.getFamilyName());
-        Assert.Equal(new DateOnly(1967, 9, 11), customer.getDateOfBirth());
-        Assert.Equal(11, customer.getCustomerNumber());
-        Assert.NotNull(customer.getAccountList());
-        Assert.NotNull(customer.getCreditList());
+        Assert.Equal("Carola", customer.GetFirstName());
+        Assert.Equal("Lilienthal", customer.GetFamilyName());
+        Assert.Equal(new DateOnly(1967, 9, 11), customer.GetDateOfBirth());
+        Assert.Equal(11, customer.GetCustomerNumber());
+        Assert.NotNull(customer.GetAccountList());
+        Assert.NotNull(customer.GetCreditList());
     }
 }

@@ -13,21 +13,24 @@ public class Account
         this.accountOwner = accountOwner;
     }
 
-    public float getBalance() {
+    public float GetBalance()
+    {
         return balance;
     }
 
-    public void setBalance(float balance) {
+    public void SetBalance(float balance)
+    {
         this.balance = balance;
     }
 
-    public int getAccountnumber() {
+    public int GetAccountnumber()
+    {
         return accountNumber;
     }
 
-    public Customer getAccountowner() {
+    public Customer GetAccountowner()
+    {
         return accountOwner;
     }
-
 
 }

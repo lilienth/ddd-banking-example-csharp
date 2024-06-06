@@ -10,7 +10,7 @@ public class Credit
 
     public enum Status
     {
-        applied, refused, granted, delayed, payed
+        Applied, Refused, Granted, Delayed, Payed
     }
 
     public Credit(int creditNumber, Customer customer, float amountOfCredit)
@@ -18,39 +18,47 @@ public class Credit
         this.amountOfCredit = amountOfCredit;
         this.creditNumber = creditNumber;
         this.customer = customer;
-        this.customer.getCreditList().Add(this);
-        this.status = Status.applied;
+        this.customer.GetCreditList().Add(this);
+        this.status = Status.Applied;
     }
 
-    public float getAmountOfCredit() {
+    public float GetAmountOfCredit()
+    {
         return amountOfCredit;
     }
 
-    public void setAmountOfCredit(float amountOfCredit) {
+    public void SetAmountOfCredit(float amountOfCredit)
+    {
         this.amountOfCredit = amountOfCredit;
     }
 
-    public Customer getCustomer() {
+    public Customer GetCustomer()
+    {
         return customer;
     }
 
-    public int getCreditNumber() {
+    public int GetCreditNumber()
+    {
         return creditNumber;
     }
 
-    public Status getStatus() {
+    public Status GetStatus()
+    {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void SetStatus(Status status)
+    {
         this.status = status;
     }
 
-    public CreditAccount? getAccount() {
+    public CreditAccount? GetAccount()
+    {
         return account;
     }
 
-    public void setAccount(CreditAccount account) {
+    public void SetAccount(CreditAccount account)
+    {
         this.account = account;
     }
 

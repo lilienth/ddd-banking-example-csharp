@@ -5,9 +5,9 @@ public class CreditAccount : Account
     private Credit credit;
 
     public CreditAccount(int accountNumber, Credit credit)
-        : base(accountNumber, credit.getCustomer())
+        : base(accountNumber, credit.GetCustomer())
     {
-        this.setBalance(-(credit.getAmountOfCredit()));
+        this.SetBalance(-(credit.GetAmountOfCredit()));
         this.credit = credit;
     }
 

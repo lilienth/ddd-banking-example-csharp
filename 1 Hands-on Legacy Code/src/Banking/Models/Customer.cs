@@ -19,27 +19,33 @@ public class Customer
         creditList = new List<Credit>();
     }
 
-    public String getFirstName() {
+    public String GetFirstName()
+    {
         return firstName;
     }
 
-    public String getFamilyName() {
+    public String GetFamilyName()
+    {
         return familyName;
     }
 
-    public DateOnly getDateOfBirth() {
+    public DateOnly GetDateOfBirth()
+    {
         return dateOfBirth;
     }
 
-    public int getCustomerNumber() {
+    public int GetCustomerNumber()
+    {
         return customerNumber;
     }
 
-    public List<Account> getAccountList() {
+    public List<Account> GetAccountList()
+    {
         return accountList;
     }
 
-    public List<Credit> getCreditList() {
+    public List<Credit> GetCreditList()
+    {
         return creditList;
     }
 
