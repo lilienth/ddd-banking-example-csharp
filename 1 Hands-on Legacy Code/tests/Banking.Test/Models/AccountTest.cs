@@ -12,4 +12,15 @@ public class AccountTest
         Assert.Equal(0, account.getBalance());
         Assert.Equal(accountowner, account.getAccountowner());
     }
+
+    [Fact]
+    void TestBalanceAccount()
+    {
+        Customer accountowner = new Customer("Carola", "Lilienthal", new DateOnly(1967, 9, 11), 11);
+        Account account = new Account(10, accountowner);
+        Assert.Equal(0, account.getBalance());
+        account.setBalance(100);
+        Assert.Equal(100, account.getBalance());
+
+    }
 }

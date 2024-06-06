@@ -24,4 +24,8 @@
       <ProjectReference Include="..\..\src\Banking\Banking.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Application\" />
+    </ItemGroup>
+
 </Project>
