@@ -14,10 +14,24 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '9.0.x'
+        dotnet-version: '8.0.x'
 
     - name: Install dependencies, build, and test 1
       working-directory: "./1 Hands-on Legacy Code"
+      run: |
+        dotnet restore
+        dotnet build --configuration Release --no-restore
+        dotnet test --no-restore --verbosity normal
+
+    - name: Install dependencies, build, and test 1
+      working-directory: "./2 Hands-on Bounded Contexts"
+      run: |
+        dotnet restore
+        dotnet build --configuration Release --no-restore
+        dotnet test --no-restore --verbosity normal
+
+    - name: Install dependencies, build, and test 1
+      working-directory: "./3 Hands-on Value Objects"
       run: |
         dotnet restore
         dotnet build --configuration Release --no-restore
