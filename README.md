@@ -38,14 +38,14 @@ brew install --cask docker
 
 ## On Your Own System
 
-You need a Dotnet SDK version 9.
+You need a Dotnet SDK version 8.
 
 ### Install prerequisites
 
 On Windows:
 
 ```powershell
-winget install -e --id Microsoft.DotNet.SDK.9
+winget install -e --id Microsoft.DotNet.SDK.8
 ```
 
 On MacOS:
