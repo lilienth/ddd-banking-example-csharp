@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 #
 VisualStudioVersion = 17.5.002.0
-MinimumVisualStudioVersion = 
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{526D473B-9180-45E5-B1AD-50F5FF9FE6A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9A2E1BF3-EBC6-4DC5-A6C7-2558F446A78F}"
