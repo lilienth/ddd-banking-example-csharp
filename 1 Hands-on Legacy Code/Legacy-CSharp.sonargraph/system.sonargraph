@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<ns2:softwareSystem xmlns:ns2="http://www.hello2morrow.com/sonargraph/core" id="56a0705991c85daa730dabe2454b9dbd" version="13.5.2.849">
+	<description></description>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/csharp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdCSharpRoslynModule" projectRootPath="./src/Banking" projectNameWithFlavor="Banking" name="Banking" id="238cc791f5e5a850b2c92d00a6ff74f9" language="CSharp">
+		<description></description>
+	</module>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/csharp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdCSharpRoslynModule" projectRootPath="./tests/Banking.Test" projectNameWithFlavor="Banking.Test" name="Banking.Test" id="1b32cca00bb0eb9fce8c875cf2211d15" language="CSharp">
+		<description></description>
+	</module>
+	<systemExtension xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/csharp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdCSharpRoslynSystemConfiguration" solutionFilePath="./DDDBankingExample.sln" language="CSharp"></systemExtension>
+</ns2:softwareSystem>
