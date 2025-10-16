@@ -6,8 +6,8 @@ public class Customer
     private String familyName;
     private DateOnly dateOfBirth;
     private int customerNumber;
-    private List<Account> accountList;
-    private List<Credit> creditList;
+    private IList<Account> accountList;
+    private IList<Credit> creditList;
 
     public Customer(String firstName, String familyName, DateOnly dateOfBirth, int customerNumber)
     {
@@ -39,12 +39,12 @@ public class Customer
         return customerNumber;
     }
 
-    public List<Account> GetAccountList()
+    public IList<Account> GetAccountList()
     {
         return accountList;
     }
 
-    public List<Credit> GetCreditList()
+    public IList<Credit> GetCreditList()
     {
         return creditList;
     }

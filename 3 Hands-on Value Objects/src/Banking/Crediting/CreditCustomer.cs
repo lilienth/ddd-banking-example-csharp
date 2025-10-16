@@ -40,12 +40,12 @@ public class CreditCustomer {
 		return customerNumber;
 	}
 
-	public List<CreditAccount> getAccountList()
+	public IList<CreditAccount> getAccountList()
     {
 		return accountList;
 	}
 
-	public List<Credit> getCreditList()
+	public IList<Credit> getCreditList()
     {
 		return creditList;
 	}
