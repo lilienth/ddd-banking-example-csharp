@@ -11,7 +11,7 @@ public class CreditCustomer {
 	private IList<Credit> creditList;
 
 	public CreditCustomer(CustomerNumber customerNumber, String firstName, String familyName, DateOnly dateOfBirth) {
-		super();
+		// ‚super();
 		this.firstName = firstName;
 		this.familyName = familyName;
 		this.dateOfBirth = dateOfBirth;
