@@ -16,31 +16,37 @@ namespace Banking.SharedKernel;
 public class Amount
 {
 
-	public static bool IsValidAmount(Amount amount) {
-		// All float values are considered valid
-		return true;
-	}
+    public static bool IsValidAmount(Amount amount)
+    {
+        // All float values are considered valid
+        return true;
+    }
 
-	public static Amount Of(float amount) {
-		return new Amount(amount);
-	}
+    public static Amount Of(float amount)
+    {
+        return new Amount(amount);
+    }
 
-	private float amount;
+    private float amount;
 
-	private Amount(float amount) {
-		this.amount = amount;
-	}
+    private Amount(float amount)
+    {
+        this.amount = amount;
+    }
 
-	public Amount Add(Amount secondAmount) {
-		return new Amount(this.amount + secondAmount.amount);
-	}
+    public Amount Add(Amount secondAmount)
+    {
+        return new Amount(this.amount + secondAmount.amount);
+    }
 
-	public Amount Subtract(Amount secondAmount) {
-		return new Amount(this.amount - secondAmount.amount);
-	}
+    public Amount Subtract(Amount secondAmount)
+    {
+        return new Amount(this.amount - secondAmount.amount);
+    }
 
-	public float Value() {
-		return this.amount;
-	}
+    public float Value()
+    {
+        return this.amount;
+    }
 
 }
