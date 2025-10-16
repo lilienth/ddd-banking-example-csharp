@@ -10,7 +10,7 @@ public class CreditCustomer {
 
 	public CreditCustomer(String firstName, String familyName, DateOnly dateOfBirth, int customerNumber)
     {
-		super();
+		//super();
 		this.firstName = firstName;
 		this.familyName = familyName;
 		this.dateOfBirth = dateOfBirth;
@@ -39,12 +39,12 @@ public class CreditCustomer {
 		return customerNumber;
 	}
 
-	public List<CreditAccount> getAccountList()
+	public IList<CreditAccount> getAccountList()
     {
 		return accountList;
 	}
 
-	public List<Credit> getCreditList()
+	public IList<Credit> getCreditList()
     {
 		return creditList;
 	}
