@@ -8,7 +8,7 @@ public class CreditCustomer {
 	private IList<CreditAccount> accountList;
 	private IList<Credit> creditList;
 
-	public CreditCustomer(String firstName, String familyName, LocalDate dateOfBirth, int customerNumber)
+	public CreditCustomer(String firstName, String familyName, DateOnly dateOfBirth, int customerNumber)
     {
 		super();
 		this.firstName = firstName;
@@ -29,7 +29,7 @@ public class CreditCustomer {
 		return familyName;
 	}
 
-	public LocalDate getDateOfBirth()
+	public DateOnly getDateOfBirth()
     {
 		return dateOfBirth;
 	}

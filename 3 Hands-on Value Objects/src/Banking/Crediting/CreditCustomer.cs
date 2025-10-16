@@ -5,12 +5,12 @@ using Banking.SharedKernel;
 public class CreditCustomer {
 	private String firstName;
 	private String familyName;
-	private LocalDate dateOfBirth;
+	private DateOnly dateOfBirth;
 	private CustomerNumber customerNumber;
 	private IList<CreditAccount> accountList;
 	private IList<Credit> creditList;
 
-	public CreditCustomer(CustomerNumber customerNumber, String firstName, String familyName, LocalDate dateOfBirth) {
+	public CreditCustomer(CustomerNumber customerNumber, String firstName, String familyName, DateOnly dateOfBirth) {
 		super();
 		this.firstName = firstName;
 		this.familyName = familyName;
