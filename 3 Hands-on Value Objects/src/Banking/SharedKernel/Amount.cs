@@ -16,7 +16,7 @@ namespace Banking.SharedKernel;
 public class Amount
 {
 
-    public static bool IsValidAmount(Amount amount)
+    public static bool IsValidAmount(float amount)
     {
         // All float values are considered valid
         return true;
@@ -49,4 +49,17 @@ public class Amount
         return this.amount;
     }
 
+    public override bool Equals(object? obj)
+    {
+        if (ReferenceEquals(this, obj)) return true;
+        if (obj == null || GetType() != obj.GetType()) return false;
+
+        var other = (Amount)obj;
+        return amount == other.amount;
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(amount);
+    }
 }

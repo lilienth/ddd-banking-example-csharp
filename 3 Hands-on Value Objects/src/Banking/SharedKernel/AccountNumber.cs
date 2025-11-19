@@ -16,21 +16,25 @@ namespace Banking.SharedKernel;
 public class AccountNumber
 {
 
-	public static bool IsValid(int accountNumberValue) {
+	public static bool IsValid(int accountNumberValue)
+    {
 		return accountNumberValue > 0;
 	}
 
-	public static AccountNumber Of(int accountNumberValue) {
+	public static AccountNumber Of(int accountNumberValue)
+    {
 		return new AccountNumber(accountNumberValue);
 	}
 
 	private int accountNumberValue;
 
-	private AccountNumber(int accountNumberValue) {
+	private AccountNumber(int accountNumberValue)
+    {
 		this.accountNumberValue = accountNumberValue;
 	}
 
-	public int ValueInt() {
+	public int ValueInt()
+    {
 		return this.accountNumberValue;
 	}
 

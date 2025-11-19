@@ -18,7 +18,7 @@ public class Customer
         this.dateOfBirth = dateOfBirth;
         this.customerNumber = customerNumber;
         accountList = new List<Account>();
-        creditList = new IList<Credit>();
+        creditList = new List<Credit>();
     }
 
     public String GetFirstName()
